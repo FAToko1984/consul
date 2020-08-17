@@ -61,13 +61,21 @@
           }
   
           @include breakpoint(xxlarge) {
-              margin-top: rem-calc(120);
+              margin-top: rem-calc(200);
               background-size: 1000% auto;
           }
       }
   
+      h1 {
+        color: #fff;
+      }
+
+      span {
+        color: #fff;
+      }
+
       .lead {
-      color: $brand;
+      color: #fff;
       font-size: rem-calc(30);
       font-weight: 700;
       line-height: rem-calc(30);
