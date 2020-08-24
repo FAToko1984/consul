@@ -53,15 +53,19 @@
   
   
           @include breakpoint(medium) {
-              margin-top: rem-calc(20);
+              margin-top: rem-calc(85);
           }
   
           @include breakpoint(large) {
-              margin-top: rem-calc(30);
+              margin-top: rem-calc(130);
           }
-  
+   
+          @include breakpoint(xlarge) {
+            margin-top: rem-calc(220);
+            background-size: 1000% auto;
+        } 
           @include breakpoint(xxlarge) {
-              margin-top: rem-calc(120);
+              margin-top: rem-calc(320);
               background-size: 1000% auto;
           }
       }
@@ -75,7 +79,7 @@
       }
 
       .lead {
-      color: $white;
+      color: #fff;
       font-size: rem-calc(30);
       font-weight: 700;
       line-height: rem-calc(30);
