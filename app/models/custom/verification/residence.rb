@@ -16,6 +16,12 @@ class Verification::Residence
 
   validate :allowed_age
   validate :document_number_uniqueness
+  
+  validate :postal_code_in_city
+
+  def postal_code_in_city
+    errors.add(:postal_code, I18n.t("verification.residence.new.error_not_allowed_postal_code")) unless valid_postal_code?
+  end
 
   def initialize(attrs = {})
     self.date_of_birth = parse_date("date_of_birth", attrs)
