@@ -16,13 +16,7 @@ class Verification::Residence
 
   validate :allowed_age
   validate :document_number_uniqueness
-  
-  validate :postal_code_in_city
 
-  def postal_code_in_city
-    errors.add(:postal_code, I18n.t("verification.residence.new.error_not_allowed_postal_code")) unless valid_postal_code?
-  end
-  
   def initialize(attrs = {})
     self.date_of_birth = parse_date("date_of_birth", attrs)
     attrs = remove_date("date_of_birth", attrs)
@@ -68,9 +62,9 @@ class Verification::Residence
   end
 
   def geozone
-    Geozone.find_by(census_code: postal_code)
+    Geozone.find_by(census_code: district_code)
   end
-  
+
   def district_code
     @census_data.district_code
   end
@@ -80,7 +74,7 @@ class Verification::Residence
   end
 
   private
-  
+
   def retrieve_census_data
     @census_data = CensusCaller.new.call(document_type, document_number, date_of_birth, postal_code)
   end
@@ -90,7 +84,7 @@ class Verification::Residence
       @census_data.postal_code == postal_code &&
       @census_data.date_of_birth == date_of_birth
   end
-  
+
   def clean_document_number
     self.document_number = document_number.gsub(/[^a-z0-9]+/i, "").upcase if document_number.present?
   end
@@ -98,4 +92,5 @@ class Verification::Residence
   def valid_postal_code?
     postal_code =~ /^970/
   end
+
 end
