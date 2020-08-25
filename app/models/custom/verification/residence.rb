@@ -18,6 +18,11 @@ class Verification::Residence
   validate :document_number_uniqueness
   
   validate :postal_code_in_city
+  validate :residency_valid_for_user
+
+  def residency_valid_for_user
+    errors.add(:postal_code, I18n.t("verification.residence.new.error_not_allowed_postal_code")) unless residency_valid?
+  end
 
   def postal_code_in_city
     errors.add(:postal_code, I18n.t("verification.residence.new.error_not_allowed_postal_code")) unless valid_postal_code?
