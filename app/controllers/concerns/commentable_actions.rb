@@ -66,7 +66,8 @@ module CommentableActions
 
   def update
     if resource.update(strong_params)
-      redirect_to resource, notice: t("flash.actions.update.#{resource_name.underscore}")
+      redirect_path = url_for(controller: controller_name, action: :show, id: @resource.id)
+      redirect_to redirect_path, notice: t("flash.actions.create.#{resource_name.underscore}")
     else
       load_categories
       load_geozones
