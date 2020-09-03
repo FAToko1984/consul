@@ -98,9 +98,13 @@
   
         <aside class="small-12 medium-3 column">
 
-          <%= link_to t("dashboard.index.edit_proposal_link"),
-                        edit_legislation_process_proposal_path(@proposal.legislation_process_id, @proposal),
-                        class: "button hollow" %>
+
+          <% if show_admin_menu?(current_user) %>
+            <%= link_to t("dashboard.index.edit_proposal_link"),
+                          edit_legislation_process_proposal_path(@proposal.legislation_process_id, @proposal),
+                          class: "button hollow" %>
+          <% end %>
+
 
           <div class="sidebar-divider"></div>
           <h2><%= t("votes.supports") %></h2>
