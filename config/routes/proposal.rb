@@ -51,5 +51,3 @@ resources :proposals do
     put "recommendations/disable", only: :index, controller: "proposals", action: :disable_recommendations
   end
 end
-
-get "proposals/:id/json_data", action: :json_data, controller: "proposals"
