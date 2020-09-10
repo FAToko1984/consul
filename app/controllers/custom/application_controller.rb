@@ -132,5 +132,4 @@ class ApplicationController < ActionController::Base
       Proposal.all
     end
 
-
 end
