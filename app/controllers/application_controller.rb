@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
   self.responder = ApplicationResponder
 
   layout :set_layout
-  respond_to :html
+  respond_to :htmlz
   helper_method :current_budget
 
   private

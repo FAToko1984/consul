@@ -36,7 +36,9 @@ class Legislation::ProcessesController < Legislation::BaseController
     @phase = :debate_phase
 
     if @process.debate_phase.started? || (current_user&.administrator?)
-      render :debate
+      respond_to do |format|
+        format.js { render partial: 'legislation/processes/debate' }
+      end
     else
       render :phase_not_open
     end
