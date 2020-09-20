@@ -1,0 +1,9 @@
+de:
+  account:
+    proposal:
+      reason_for_supports_necessary: ""
+  welcome:
+    feed:
+      most_active:
+        debates: "Aktivste Diskussionen"
+      see_all_debates: Alle Diskussionen anzeigen

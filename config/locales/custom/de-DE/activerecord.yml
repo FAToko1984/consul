@@ -1,0 +1,8 @@
+de:
+  attributes:
+    geozone_id: "Rahmen der Operation"
+  activerecord:
+    attributes:
+      debate/translation:
+        title: "Titel der Diskussion"
+        description: "Initialer Diskussionsbeitrag"

@@ -1,0 +1,61 @@
+de:
+  budgets:
+    ballots:
+      show:
+        amount_spent: Gesamtinvestitionen
+        zero: Sie haben noch über keinen Investitionsvorschlag abgestimmt.
+      reasons_for_not_balloting:
+        not_verified: Nur verifizierte Benutzer*innen können über einen Investitionsvorschlag abstimmen; %{verify_account}.
+    groups:
+      show:
+        unfeasible_title: Nicht durchführbare Investitionsvorschläge
+        unfeasible: Nicht durchführbare Investitionen anzeigen
+        unselected_title: Investitionsvorschläge, die nicht für die Abstimmungsphase ausgewählt wurden
+        unselected: Investitionsvorschläge, die nicht für die Abstimmungsphase ausgewählt wurden, anzeigen
+    index:
+      map: Investitionsvorschläge geografisch geordnet
+      investment_proyects: Liste aller Investitionsvorschläge
+      unfeasible_investment_proyects: Liste aller nicht durchführbaren Investitionsvorschläge
+      not_selected_investment_proyects: Liste aller Investitionsvorschläge, die nicht für die Abstimmung ausgewählt wurden
+      form:
+        map_skip_checkbox: "Dieser Investitionsvorschlag hat keinen konkreten Standort oder ich kenne ihn nicht."
+      index:
+        unfeasible: Undurchführbare Investitionsvorschläge
+        unfeasible_text: "Der Investitionsvorschlag muss eine gewisse Anzahl von Anforderungen erfüllen, (Legalität, Durchführbarkeit, im Aufgabenbereich der Stadt, innerhalb des Limits des Haushaltes) um für durchführbar erklärt werden zu können und das Stadium der finalen Abstimmung zu erreichen. Alle Ausgabenvorschläge, die diese Kriterien nicht erfüllen, sind als nicht durchführbar markiert und stehen in der folgenden Liste, zusammen mit einem Bericht zur Undurchführbarkeit."
+        by_heading: "Investitionsvorschläge im Bereich: %{heading}"
+        search_form:
+          placeholder: Suche Investitionsvorschläge...
+        sidebar:
+          zero: Sie haben für keinen Investitionsvorschlag in dieser Gruppe abgestimmt.
+          verified_only: "Um ein neuen Investitionsvorschlag zu erstellen %{verify}."
+          not_logged_in: "Um einen neuen Investitionsvorschlag erstellen zu können, müssen Sie %{sign_in} oder %{sign_up}."
+      share:
+        message: "Ich habe einen Investitionsvorschlag %{title} in %{handle} erstellt. Erstellen Sie auch einen Investitionsvorschlag!"
+      show:
+        code: "Code des Investitionsvorschlags: <strong>%{code}</strong>"
+        project_unfeasible: "Dieser Investitionsvorschlag <strong>wurde als nicht durchführbar markiert</strong> und wird nicht in die Abstimmungsphase übergehen."
+        project_selected: "Dieser Investitionsvorschlag wurde für die Abstimmungsphase <strong>ausgewählt</strong>."
+        project_winner: "Best bewerteter Investitionsvorschlag"
+        project_not_selected: "Dieser Investitionsvorschlag wurde <strong>nicht</strong> für die Abstimmungsphase ausgewählt."
+      investment:
+        already_added: Sie haben diesen Investitionsvorschlag bereits hinzugefügt
+        already_supported: Sie haben diesen Investitionsvorschlag bereits unterstützt. Jetzt teilen!
+        confirm_group:
+          one: "Sie können nur Investitionsvorschläge im %{count} Bezirk unterstützen. Wenn Sie fortfahren, können Sie ihren Wahlbezirk nicht ändern. Sind Sie sicher?"
+          other: "Sie können nur Investitionsvorschläge im %{count} Bezirk unterstützen. Wenn sie fortfahren, können sie ihren Wahlbezirk nicht ändern. Sind sie sicher?" 
+    show:
+      unfeasible_title: Nicht durchführbare Investitionsvorschläge
+      unfeasible: Nicht durchführbare Investitionsvorschläge anzeigen
+      unselected_title: Investitionsvorschläge, die es nicht in die Abstimmungsphase geschafft haben
+      unselected: Investitionsvorschläge, die es nicht in die Abstimmungsphase geschafft haben, anzeigen
+    results:
+      accepted: "Genehmigter Investitionsvorschläge: "
+      discarded: "Verworfener Investitionsvorschläge: "
+      investment_proyects: Liste aller Investitionsvorschläge
+      unfeasible_investment_proyects: Liste aller nicht durchführbaren Investitionsvorschläge
+      not_selected_investment_proyects: Liste aller Investitionsvorschläge, die es nicht in die Abstimmung geschafft haben
+    executions:
+      no_winner_investments: "Keine erfolgreichen Investitionsvorschläge in diesem Status"
+      filters:
+        milestone_tag:
+          label: "Status des Investitionsvorschläge"
