@@ -1,0 +1,18 @@
+de:
+  admin:
+    debates:
+      index:
+        title: Diskussionen
+        no_debates: Keine Diskussion vorhanden.
+    hidden_debates:
+      index:
+        title: Verborgene Diskussion
+        no_hidden_debates: Keine verborgenen Diskussion vorhanden.
+    menu:
+      debates: "Diskussionen"
+    shared:
+      debate_search:
+        placeholder: Suche Diskussionen per Titel oder Beschreibung
+    stats:
+      graph:
+        debate_created: Diskussionen

@@ -6,3 +6,5 @@ de:
       debate/translation:
         title: "Titel der Diskussion"
         description: "Initialer Diskussionsbeitrag"
+      debate:
+        tag_list: "Tags"
