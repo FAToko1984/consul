@@ -8,3 +8,9 @@ de:
         description: "Initialer Diskussionsbeitrag"
       debate:
         tag_list: "Tags"
+      signature_sheet:
+        signable_id: "ID des Vorschlags/Investitionsvorschlags"
+    models:
+      proposal:
+        one: "Vorschlag"
+        other: "Vorschläge"

@@ -7,3 +7,20 @@ de:
       most_active:
         debates: "Aktivste Diskussionen"
       see_all_debates: Alle Diskussionen anzeigen
+  proposals:
+    new:
+      more_info: Wie funktionieren die Vorschläge?
+  poster:
+    index:
+      intro_text: "<strong> Ich beteilige mich mit meinem eigenen Vorschlag an %{org}</strong>, und nur wenn Sie dem beitreten, kann ich die notwendige Unterstützung erreichen, damit wir die Stadt so gestalten, wie wir sie alle wollen."
+  dashboard:
+    mailer:
+      forward:
+        introduction: Ich schreibe Ihnen, da ich an %{org} teilnehme, der Plattform, auf der wir entscheiden können, welche Stadt wir wollen. Dafür habe ich meinen eigenen Vorschlag erstellt und jetzt werde ich Ihre Unterstützung brauchen! Keine Sorge, es ist sehr einfach.
+  shared:
+    followable:
+      proposal:
+        create:
+          notice: "Jetzt folgen Sie diesem Vorschlag! <br> Wir werden Sie über Änderungen benachrichtigen sobald diese erscheinen, sodass Sie auf dem neusten Stand sind."
+        destroy:
+          notice: "Sie haben aufgehört diesem Vorschlag zu folgen! <br> Sie werden nicht länger Benachrichtigungen zu diesem Vorschlag erhalten."
