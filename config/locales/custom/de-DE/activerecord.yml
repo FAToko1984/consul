@@ -1,15 +1,17 @@
 de:
   attributes:
-    geozone_id: "Rahmen der Operation"
+    geozone_id: "Rahmen des Vorschlags"
   activerecord:
     attributes:
       debate/translation:
         title: "Titel der Diskussion"
         description: "Initialer Diskussionsbeitrag"
       debate:
-        tag_list: "Tags"
+        tag_list: "Eigene Tags hinzufügen"
       signature_sheet:
         signable_id: "ID des Vorschlags/Investitionsvorschlags"
+      tag:
+        name: "Geben Sie den Namen des Tags ein"
     models:
       proposal:
         one: "Vorschlag"

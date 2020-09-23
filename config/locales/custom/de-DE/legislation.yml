@@ -2,4 +2,11 @@ de:
   legislation:
     processes:
       shared:
+        key_dates: Teilnahmephasen
+        homepage: Informationen
+        debate_dates: Offene Fragen
         draft_publication_date: Entwurf zur Veröffentlichung
+        allegations_dates: Ausarbeitung
+        result_publication_date: Veröffentlichung Endergebnis
+        milestones_date: Meilensteine
+        proposals_dates: Vorschläge

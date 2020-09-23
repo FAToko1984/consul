@@ -3,3 +3,4 @@ de:
     help:
       proposals:
         link: "Vorschläge"
+        description: "Im %{link}-Abschnitt können Sie Anträge an den Stadtrat stellen. Die Anträge brauchen dann Unterstützung. Wenn Ihr Antrag ausreichend Unterstützung bekommt, wird er zur öffentlichen Wahl freigegeben. Anträge, die durch Teilnehmerstimmen bestätigt wurden, werden vom Stadtrat angenommen und umgesetzt."

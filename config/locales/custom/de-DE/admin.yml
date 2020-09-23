@@ -10,6 +10,7 @@ de:
         no_hidden_debates: Keine verborgenen Diskussion vorhanden.
     menu:
       debates: "Diskussionen"
+      proposals_topics: Vordefinierte Tags
     shared:
       debate_search:
         placeholder: Suche Diskussionen per Titel oder Beschreibung
@@ -17,3 +18,18 @@ de:
       graph:
         debate_created: Diskussionen
         proposal_created: Vorschläge
+    tags:
+      create: Tag erstellen
+      destroy: Tag löschen
+      index:
+        add_tag: Neuen Tag für Vorschläge hinzufügen
+        title: Tags der Vorschläge
+        topic: Tag
+        help: "Wenn ein*e Benutzer*in einen Vorschlag erstellt, werden die folgenden Tags als Standard-Tags vorgeschlagen."
+    proposals:
+      form:
+        custom_categories: Tags
+        custom_categories_description: Vordefinierte Tags, die Benutzer*innen bei der Erstellung eines Vorschlags auswählen können.
+        custom_categories_placeholder: Geben Sie die gewünschten Tags ein, getrennt durch Kommas (',') und mit Anführungszeichen ("")
+      index:
+        selected: Vorschläge auswählen
