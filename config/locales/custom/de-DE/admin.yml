@@ -1,5 +1,8 @@
 de:
   admin:
+    banners:
+      banner:
+        budgets: Budget
     debates:
       index:
         title: Diskussionen
@@ -11,8 +14,10 @@ de:
     menu:
       debates: "Diskussionen"
       polls: Abstimmungen
+      budgets: Budgets
       legislation: Beteiligungsverfahren
       proposals_topics: Vordefinierte Tags
+      hidden_budget_investments: Verborgene Investitionsvorschläge
     shared:
       debate_search:
         placeholder: Suche Diskussionen per Titel oder Beschreibung
@@ -20,6 +25,11 @@ de:
       graph:
         debate_created: Diskussionen
         proposal_created: Vorschläge
+      show:
+        budgets_title: Partizipatives Budget
+        participatory_budgets: Budgets
+        summary:
+          budget_investments: Investitionsvorschläge
     tags:
       create: Tag erstellen
       destroy: Tag löschen
@@ -89,3 +99,72 @@ de:
         form:
           custom_categories: Tags
           custom_categories_description: Vorgeschlagene Tags, die Benutzer*innen bei der Erstellung eines Vorschlags auswählen können.
+    budgets:
+      index:
+        title: Budgets
+        new_link: Neues Budget erstellen
+        budget_investments: Investitionsprojekte verwalten
+        table_investments: Investitionsvorschläge
+        edit_budget: Budget bearbeiten
+        no_budgets: "Kein Budget vorhanden."
+      create:
+        notice: Neues Budget erfolgreich erstellt!
+      update:
+        notice: Budget erfolgreich aktualisiert
+      edit:
+        title: Budget bearbeiten
+        delete: Budget löschen
+      destroy:
+        success_notice: Budget erfolgreich gelöscht
+        unable_notice: Ein Budget mit zugehörigen Investitionsvorschlägen kann nicht gelöscht werden
+        unable_notice_polls: Sie können kein Budget löschen, das eine zugehörige Abstimmung hat
+      new:
+        title: Neues Budget
+    budget_groups:
+      index:
+        back: "Zurück zu den Budgets"
+    budget_phases:
+      index:
+        enabled_help_text: Diese Phase wird öffentlich in der Zeitleiste der Phasen des Budget angezeigt und ist auch für andere Zwecke aktiv
+    budget_investments:
+      index:
+        title: Investitionsvorschläge
+        milestone_tags_filter_all: "Status aller Investitionsvorschläge"
+        list:
+          id: ID
+          title: Titel
+          supports: Unterstützung
+          admin: Administrator
+          valuator: Begutachter/in
+          valuation_group: Bewertungsgruppe
+          geozone: Bezug der Vorschläge
+          feasibility: Durchführbarkeit
+          valuation_finished: Bewertung fertig?
+          selected: Status
+          visible_to_valuators: Begutachter*innen zeigen
+          author_username: Benutzer*innenname des/der Verfasser*in
+          incompatible: Inkompatibel
+          price: Preis
+          author: Autor
+    segment_recipient:
+      not_supported_on_current_budget: Benutzer*innen, die keine Vorschläge im aktuellen Budget unterstützt haben
+    system_emails:
+      budget_investment_created:
+        title: "Budget angelegt"
+        description: "Wird gesendet, wenn ein Benutzer einen Vorschlag zum Budget anlegt."
+      budget_investment_selected:
+        title: "Budget ausgewählt"
+        description: "Wird an den Autor gesendet, wenn sein Vorschlag zum Budget ausgewählt wurde."
+      budget_investment_unfeasible:
+        title: "Vorschlag für Budget nicht durchführbar"
+        description: "Wird dem Autor gesendet, wenn sein Vorschlag zum Budget nicht durchführbar ist."
+      budget_investment_unselected:
+        title: "Budget nicht ausgewählt"
+        description: "Wird an den Autor gesendet, wenn sein Vorschlag zum Budget nicht ausgewählt wurde."
+      alert:
+        no_investments: "Es sind keine Budget-Vorschläge angelegt. Einige Beispieldaten werden benötigt, um eine Vorschau der E-Mail zu erhalten."
+    settings:
+      index:
+        map:
+          how_to_enable: 'Um die Karte den Benutzern anzuzeigen, müssen Sie "Vorschläge und Budgets Geolokalisierung" auf der Registerkarte "Funktionen" aktivieren.'
+

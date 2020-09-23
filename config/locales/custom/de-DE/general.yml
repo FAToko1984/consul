@@ -7,9 +7,6 @@ de:
       most_active:
         debates: "Aktivste Diskussionen"
       see_all_debates: Alle Diskussionen anzeigen
-  proposalsbranchbran:
-    new:
-      more_info: Wie funktionieren die Vorschläge?
   poster:
     index:
       intro_text: "<strong> Ich beteilige mich mit meinem eigenen Vorschlag an %{org}</strong>, und nur wenn Sie dem beitreten, kann ich die notwendige Unterstützung erreichen, damit wir die Stadt so gestalten, wie wir sie alle wollen."
@@ -62,7 +59,11 @@ de:
     index:
       participate_button: "An Abstimmung teilnehmen"
       participate_button_expired: "Abstimmung beendet"
+      section_header:
+        title: Abstimmungen
+        help: Hilfe zu den Abstimmungen
       section_footer:
+        title: Hilfe zu den Abstimmungen
         description: Abstimmungen sind ein partizipatorischer Mechanismus, bei dem die Teilnehmer themenbezogene Entscheidungen treffen können. Die Teilnahmebedingingen, wie zum Beispiel die Beschränkung auf einzelne Gebiete, werden bei der Erstellung einer Abstimmung festgelegt.
     show:
       cant_answer_expired: "Diese Abstimmung wurde beendet."
@@ -70,7 +71,13 @@ de:
       stats_menu: "Statistiken"
       results_menu: "Ergebnisse"
       stats:
-        white: "Leere Stimmzettel"
+        white: "Leere"
+      back: Zurück zu Abstimmungen
   layouts:  
     header:
+      debates: Diskussionen
+      proposals: Vorschläge
+      poll_questions: Abstimmungen
       collaborative_legislation: Beteiligungsverfahren
+      budgets: Budgets
+

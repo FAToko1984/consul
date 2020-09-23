@@ -3,6 +3,8 @@ de:
     geozone_id: "Rahmen des Vorschlags"
   activerecord:
     attributes:
+      budget:
+        description_finished: "Beschreibung, wenn das Budget beschlossen ist"
       debate/translation:
         title: "Titel der Diskussion"
         description: "Initialer Diskussionsbeitrag"
@@ -28,6 +30,12 @@ de:
       proposal:
         one: "Vorschlag"
         other: "Vorschläge"
+      poll:
+        one: "Abstimmung"
+        other: "Abstimmungen"
+      budget:
+        one: "Budget"
+        other: "Budgets"
       milestone/status:
         one: "Status des Vorschlags"
         other: "Status der Vorschläge"
