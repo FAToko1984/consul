@@ -10,6 +10,8 @@ de:
         no_hidden_debates: Keine verborgenen Diskussion vorhanden.
     menu:
       debates: "Diskussionen"
+      polls: Abstimmungen
+      legislation: Beteiligungsverfahren
       proposals_topics: Vordefinierte Tags
     shared:
       debate_search:
@@ -33,3 +35,48 @@ de:
         custom_categories_placeholder: Geben Sie die gewünschten Tags ein, getrennt durch Kommas (',') und mit Anführungszeichen ("")
       index:
         selected: Vorschläge auswählen
+    polls:
+      index:
+        title: "Liste der Abstimmungen"
+        closing_date: "Enddatum"
+    active_polls:
+      edit:
+        title: "Übersichtsseite editieren"
+        dashboard:
+      index:
+        back: Zurück zu %{org}
+        title: Verwaltung
+    description: Willkommen auf dem Admin-Panel für %{org}.
+    actions:
+      index:
+        default:
+          polls: Abstimmungen
+      configure: Fragen & Dashboard
+    legislation:
+      processes:
+        index:
+          create: Neues Beteiligungsverfahren
+          title: Beteiligungsverfahren
+        new:
+          back: Zurück
+          title: Neues kollaboratives Beteiligungsverfahren erstellen
+          submit_button: Beteiligungsverfahren erstellen
+        subnav:
+          info: Einstellungen
+          homepage: Informationen
+          draft_versions: Ausarbeitung
+          questions: Offene Fragen
+          proposals: Vorschläge
+          milestones: Meilensteine
+        form:
+          enabled: Aktiviert
+          process: Gesamtdauer des Beteiligungsverfahren
+          debate_phase: Phase Offene-Fragen
+          draft_phase: Entwurfsphase
+          draft_phase_description: Wenn diese Phase aktiv ist, wird dieses Beteiligungsverfahren nicht in der Liste aller Verfahren angezeigt. Lassen Sie sich eine Vorschau des Verfahrens anzeigen und erstellen Sie Inhalte vor dem Start.
+          allegations_phase: Ausarbeitungsphase
+          proposals_phase: Vorschlagsphase
+      proposals:
+        form:
+          custom_categories: Tags
+          custom_categories_description: Vorgeschlagene Tags, die Benutzer*innen bei der Erstellung eines Vorschlags auswählen können.

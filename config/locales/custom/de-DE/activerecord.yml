@@ -12,6 +12,18 @@ de:
         signable_id: "ID des Vorschlags/Investitionsvorschlags"
       tag:
         name: "Geben Sie den Namen des Tags ein"
+      legislation/process:
+        debate_start_date: Anfangsdatum
+        debate_end_date: Enddatum
+        draft_start_date: Anfangsdatum
+        draft_end_date: Enddatum
+        draft_publication_date: Veröffentlichung des Entwurfs
+        allegations_start_date: Anfangsdatum
+        allegations_end_date: Enddatum
+        proposals_phase_start_date: Anfangsdatum
+        proposals_phase_end_date: Enddatum
+        result_publication_date: Veröffentlichung Endergebnis
+        homepage_enabled: "Informations-Tab aktiviert"
     models:
       proposal:
         one: "Vorschlag"

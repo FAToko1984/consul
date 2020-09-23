@@ -31,6 +31,7 @@ de:
       categories: "Alle Tags"
     advanced_search:
       author_type: "Nach Autorenkategorie"
+    follow_entity: "Diesem Vorschlag folgen"
   debates:
     index:
       orders:
@@ -64,3 +65,6 @@ de:
       participate_button: "An Abstimmung teilnehmen"
       section_footer:
         description: Abstimmungen sind ein partizipatorischer Mechanismus, bei dem die Teilnehmer themenbezogene Entscheidungen treffen können. Die Teilnahmebedingingen, wie zum Beispiel die Beschränkung auf einzelne Gebiete, werden bei der Erstellung einer Abstimmung festgelegt.
+  layouts:  
+    header:
+      collaborative_legislation: Beteiligungsverfahren
