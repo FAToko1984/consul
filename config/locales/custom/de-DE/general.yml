@@ -52,8 +52,6 @@ de:
         archival_date: Archiviert
         recommendations: Empfehlungen
     form:
-      proposal_responsible_name_note: "(Einzelperson oder Vertreter/in eines Kollektivs; wird nicht öffentlich angezeigt)"
-      proposal_summary_note: "(maximal 200 Zeichen)"
       tag_category_label: "Vorgeschlagene Tags"
       tags_instructions: "Diesen Vorschlag markieren. Sie können aus vorgeschlagenen Tags wählen, oder Ihre eigenen hinzufügen"
       tags_label: Verschlagwortung
@@ -63,8 +61,16 @@ de:
   polls:
     index:
       participate_button: "An Abstimmung teilnehmen"
+      participate_button_expired: "Abstimmung beendet"
       section_footer:
         description: Abstimmungen sind ein partizipatorischer Mechanismus, bei dem die Teilnehmer themenbezogene Entscheidungen treffen können. Die Teilnahmebedingingen, wie zum Beispiel die Beschränkung auf einzelne Gebiete, werden bei der Erstellung einer Abstimmung festgelegt.
+    show:
+      cant_answer_expired: "Diese Abstimmung wurde beendet."
+      info_menu: "Ursprüngliche Abstimmung"
+      stats_menu: "Statistiken"
+      results_menu: "Ergebnisse"
+      stats:
+        white: "Leere Stimmzettel"
   layouts:  
     header:
       collaborative_legislation: Beteiligungsverfahren

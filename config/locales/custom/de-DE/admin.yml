@@ -52,6 +52,15 @@ de:
         default:
           polls: Abstimmungen
       configure: Fragen & Dashboard
+    milestones:
+      form:
+        admin_statuses: Status des Vorschlags verwalten
+        no_statuses_defined: Es wurde noch kein Status für diese Vorschläge definiert
+    statuses:
+      index:
+        title: Status der Vorschläge
+        empty_statuses: Es wurde noch kein Status für die Vorschläge definiert
+        new_status: Neuen Status für Vorschlag erstellen
     legislation:
       processes:
         index:

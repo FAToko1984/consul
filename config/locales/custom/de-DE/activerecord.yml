@@ -28,3 +28,6 @@ de:
       proposal:
         one: "Vorschlag"
         other: "Vorschläge"
+      milestone/status:
+        one: "Status des Vorschlags"
+        other: "Status der Vorschläge"
