@@ -26,6 +26,9 @@ de:
         proposals_phase_end_date: Enddatum
         result_publication_date: Veröffentlichung Endergebnis
         homepage_enabled: "Informations-Tab aktiviert"
+      user:
+        official_position: "Offizielle(r) Vertreter*in"
+        email_on_comment: "Benachrichtigung per Mail, wenn meine Vorschläge oder Diskussionen kommentiert werden"
     models:
       proposal:
         one: "Vorschlag"
@@ -39,3 +42,13 @@ de:
       milestone/status:
         one: "Status des Vorschlags"
         other: "Status der Vorschläge"
+      poll/officer:
+        one: "Offizielle(r) Vertreter*in"
+        other: "Offizielle Vertreter*innen"
+      site_customization/image:
+        other: Benutzerdefinierte Bilder
+      site_customization/content_block:
+        other: Benutzerdefinierte Inhaltsdatenblöcke
+      manager:
+        one: "Verwalter*in"
+        other: "Verwalter*innen"

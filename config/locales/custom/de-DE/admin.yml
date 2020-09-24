@@ -18,9 +18,21 @@ de:
       legislation: Beteiligungsverfahren
       proposals_topics: Vordefinierte Tags
       hidden_budget_investments: Verborgene Investitionsvorschläge
+      title_booths: Offline Abstimmungen
+      poll_officers: Wahlhelfer*in
+      poll_booth_assignments: Zuordnung der Abstimmungen zu Wahlkabinen
+      signature_sheets: Offline Unterschriftsbögen für Vorschläge
+      officials: Offizielle(r) Vertreter*innen
+      site_customization:
+        information_texts: Benutzerdefinierte Informationstexte
+      valuators: Gutachter*innen für Budgets
+      managers: Verwalter*innen
+      geozones: Geozonen verwalten
     shared:
       debate_search:
         placeholder: Suche Diskussionen per Titel oder Beschreibung
+      poll_officers_search:
+        placeholder: Suche offizielle Vertreter*innen
     stats:
       graph:
         debate_created: Diskussionen
@@ -30,6 +42,8 @@ de:
         participatory_budgets: Budgets
         summary:
           budget_investments: Investitionsvorschläge
+        polls: Abstimmungen
+
     tags:
       create: Tag erstellen
       destroy: Tag löschen
@@ -49,6 +63,9 @@ de:
       index:
         title: "Liste der Abstimmungen"
         closing_date: "Enddatum"
+        geozone_restricted: "Beschränkt auf Bereiche"
+      show:
+        officers_tab: Offizielle(r) Vertreter*in
     active_polls:
       edit:
         title: "Übersichtsseite editieren"
@@ -167,4 +184,93 @@ de:
       index:
         map:
           how_to_enable: 'Um die Karte den Benutzern anzuzeigen, müssen Sie "Vorschläge und Budgets Geolokalisierung" auf der Registerkarte "Funktionen" aktivieren.'
-
+    poll_officers:
+      index:
+        title: Wahlhelfer*in
+      officer:
+        entry_name: Wahlhelfer*in  
+      search:
+        help: "Um Wahlhelfer*innen hinzuzufügen oder zu entfernen, verwenden Sie das untenstehende Suchformular."
+    poll_officer_assignments:
+      by_officer:
+        assignments: "Wechsel der offiziellen Vertretung in dieser Abstimmung"
+        no_assignments: "In dieser Abstimmung gibt es keinen Schichtwechsel des/der Wahlhelfer*in."
+    poll_booth_assignments:
+      index:
+        officers: "Offizielle(r) Vertreter*in"
+        officers_list: "Liste der offiziellen Vertreter*innen für diese Wahlurne"
+        no_officers: "Es gibt keine offiziellen Vertreter*innen für diese Wahlurne"
+        officers_title: "Liste der zugewiesenen offiziellen Vertreter*innen"
+        count_final: "Endgültige Nachzählung (durch offizielle(r) Vertreter*in)"
+        booths_title: "Liste der zugewiesenen Wahlurnen"
+        no_booths: "Dieser Abstimmung sind keine Wahlhelfer*innen zugeordnet."
+      by_officer:
+        assignments: "Wechsel der offiziellen Vertreter*innen in dieser Abstimmung"
+        no_assignments: "In dieser Abstimmung gibt es keinen Schichtwechsel des/der Wahlhelfer*in."
+    poll_shifts:
+      new:
+        officer: "Offizielle(r) Vertreter*in"
+        search_officer_placeholder: Suche nach offizielle(m) Vertreter*in
+        search_officer_text: Suche nach offizielle(m) Vertreter*in, um neue Arbeitsschicht zuzuordnen
+      flash:
+        create: "Arbeitsschicht für offizielle(m) Vertreter*in hinzugefügt"
+        destroy: "Arbeitsschicht für offizielle(m) Vertreter*in entfernt"
+    recounts:
+      index:
+        table_total_recount: "Gesamte Nachzählung (durch offizielle(n) Vertreter*in)"
+    officials:
+      edit:
+        destroy: Status "offizielle(n) Vertreter*in" entfernen
+        title: "Offizielle(r) Vertreter*in: Benutzer*in bearbeiten"
+      flash:
+        official_destroyed: "Daten gespeichert: Der/Die Benutzer*in ist nicht länger ein/e offizielle(r) Vertreter*in"
+        official_updated: Details des/r offizielle(r) Vertreter*in gespeichert
+      index:
+        no_officials: Keine offizielle Vertreter*innen vorhanden.
+      level_0: Kein/e offizielle(r) Vertreter*in
+      level_1: Stufe 1
+      level_2: Stufe 2
+      level_3: Stufe 3
+      level_4: Stufe 4
+      level_5: Stufe 5
+      search:
+        edit_official: Offizielle(n) Vertreter*in bearbeiten
+        make_official: Offizielle(n) Vertreter*in erstellen
+        title: "Offizielle Vertreter*innen: Benutzer*innensuche"
+        no_results: Keine offizielle Vertreter*innen gefunden.
+    site_customization:
+      pages:
+        index:
+          title: Benutzerdefinierte Seiten
+          see_page: Seite anzeigen
+        new:
+          title: Neue benutzerdefinierte Seite erstellen
+        page:
+          created_at: Erstellt
+          updated_at: Aktualisiert
+          cards_title: Kacheln
+          see_cards: Kachel anzeigen
+        cards:
+          cards_title: Kacheln
+          create_card: Kachel erstellen
+          no_cards: Keine Kachel vorhanden.
+    homepage:
+      cards_title: Kacheln
+      create_card: Kachel erstellen
+      no_cards: Keine Kacheln vorhanden.
+      new:
+        card_title: Neue Kachel
+        submit_card: Kachel erstellen
+      edit:
+        card_title: Kachel bearbeiten
+        submit_card: Kachel speichern
+    managers:
+      index:
+        title: Verwalter*innen
+        no_managers: Keine Verwalter*innen vorhanden.
+      search:
+        title: "Verwalter*innen: Benutzer*innensuche"
+    geozones:
+      index:
+        title: Bereiche
+        create: Bereich erstellen

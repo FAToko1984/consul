@@ -55,7 +55,7 @@ de:
           check_ballot_link: "Überprüfung meiner Abstimmung"
           zero: Sie haben für keinen Investitionsvorschlag in dieser Gruppe abgestimmt.
           verified_only: "Um ein neuen Investitionsvorschlag zu erstellen %{verify}."
-          create: "Einen Investitionsvorschlag einbringen"
+          create: "Investitionsvorschlag einbringen"
           not_logged_in: "Um einen neuen Investitionsvorschlag erstellen zu können, müssen Sie %{sign_in} oder %{sign_up}."
         orders:
           random: Zufällig
