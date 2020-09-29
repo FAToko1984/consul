@@ -3,3 +3,12 @@
 // * English: https://github.com/consul/consul/blob/master/CUSTOMIZE_EN.md#css
 // * Spanish: https://github.com/consul/consul/blob/master/CUSTOMIZE_ES.md#css
 //
+
+
+$brand:             #214969;
+$dark:              darken($brand, 10%);
+
+
+// $body-font-family: 'DM Sans Regular', 'DM Sans Bold', 'PT Serif Web Regular', sans-serif !important;
+// $header-font-family: 'DM Sans Regular', 'DM Sans Bold', 'PT Serif Web Regular', sans-serif !important;
+// $base-font-size:      16px;

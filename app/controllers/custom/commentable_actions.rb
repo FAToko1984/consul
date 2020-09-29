@@ -10,6 +10,7 @@ module CommentableActions
     @resources = @current_order == "recommendations" && current_user.present? ? @resources.recommendations(current_user) : @resources.for_render
     @resources = @resources.search(@search_terms) if @search_terms.present?
     @resources = @advanced_search_terms.present? ? @resources.filter(@advanced_search_terms) : @resources
+    @resources = @resources.tagged_with(@tag_filter) if @tag_filter
 
     @resources = @resources.page(params[:page]).send("sort_by_#{@current_order}")
 
@@ -65,13 +66,13 @@ module CommentableActions
 
   def update
     if resource.update(strong_params)
-      redirect_path = url_for(controller: controller_name, action: :show, id: @resource.id)
-      redirect_to redirect_path, notice: t("flash.actions.create.#{resource_name.underscore}")
+        redirect_path = url_for(controller: controller_name, action: :show, id: @resource.id)
+        redirect_to redirect_path, notice: t("flash.actions.create.#{resource_name.underscore}")
     else
-      load_categories
-      load_geozones
-      set_resource_instance
-      render :edit
+        load_categories
+        load_geozones
+        set_resource_instance
+        render :edit
     end
   end
 
@@ -103,6 +104,12 @@ module CommentableActions
       @categories = Tag.category.order(:name)
     end
 
+    def parse_tag_filter
+      if params[:tag].present?
+        @tag_filter = params[:tag] if Tag.named(params[:tag]).exists?
+      end
+    end
+
     def set_resource_votes(instance)
       send("set_#{resource_name}_votes", instance)
     end
@@ -124,3 +131,6 @@ module CommentableActions
       @featured_proposals ||= []
     end
 end
+
+  
+

@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
   self.responder = ApplicationResponder
 
   layout :set_layout
-  respond_to :htmlz
+  respond_to :html
   helper_method :current_budget
 
   private
@@ -127,4 +127,13 @@ class ApplicationController < ActionController::Base
 
       redirect_to path, response_status
     end
+
+    def all_proposals
+      if params[:search]
+      Proposal.search(params[:search])
+      else
+      Proposal.all
+      end
+    end
+
 end
