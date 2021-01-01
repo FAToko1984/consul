@@ -8,10 +8,10 @@ module Abilities
       can :restore, Comment
       cannot :restore, Comment, hidden_at: nil
 
-      can :restore, Debate
+      can :manage, Debate
       cannot :restore, Debate, hidden_at: nil
 
-      can :restore, Proposal
+      can :manage, Proposal
       cannot :restore, Proposal, hidden_at: nil
 
       can :create, Legislation::Proposal
