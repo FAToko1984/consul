@@ -963,3 +963,17 @@ de:
     create:
       enqueue_remote_translation: Übersetzungen wurden korrekt angefordert.
     button: Seite übersetzen
+  search:
+    go_to_discusstion: "open discussion..."
+    search_form:
+      placeholder: "Suchen..."
+      button: "Suche"
+    tabs:
+      all: "Alle Ergebnisse %{doc_count}"
+      debate: "Diskussionen %{doc_count}"
+      proposal: "Vorschläge %{doc_count}"
+      poll: "Abstimmungen %{doc_count}"
+      budget_investment: "Budgets %{doc_count}"
+      legislation_proposal: "Beteiligungsverfahren %{doc_count}"
+      comment: "Kommentare %{doc_count}"
+      site_customization_page: "Webseiten %{doc_count}"
