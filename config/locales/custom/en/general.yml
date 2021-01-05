@@ -1,4 +1,3 @@
-en:
   search:
     go_to_discusstion: "open discussion..."
     search_form:
@@ -13,3 +12,11 @@ en:
       legislation_proposal: "Legislations %{doc_count}"
       comment: "Comments %{doc_count}"
       site_customization_page: "Pages %{doc_count}"
+    result_tag:
+      de: "d"
+      pr: "p"
+      po: "P"
+      bu: "b"
+      le: "L"
+      co: "c"
+      si: "s"

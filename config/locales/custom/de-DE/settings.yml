@@ -127,6 +127,8 @@ de:
       valuation_comment_notification: "Bewertung Kommentar Benachrichtigung"
       valuation_comment_notification_description: "Senden Sie eine E-Mail an alle verbundenen Benutzer*innen, wenn ein neuer Bewertungskommentar erstellt wird - mit Ausnahme des Bewertungskommentars für Budgetinvestitionen"
       graphql_api: "GraphQL API"
+      elasticsearch: "Elasticsearch"
+      elasticsearch_description: "Elasticsearch ist die führende verteilte, RESTful, open-source Such- und Analyse-Engine, die für Geschwindigkeit, horizontale Skalierbarkeit, Zuverlässigkeit und einfach Verwaltung entwicklet wurde."
       dashboard:
         notification_emails: "Dashboard Benachrichtigungs-Emails"
         notification_emails_description: "Aktivieren Sie das Senden von Dashboard Benachrichtigungs-Emails an die Autoren von Vorschlägen."

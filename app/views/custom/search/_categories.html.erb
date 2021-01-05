@@ -8,7 +8,7 @@
       <%categories.buckets.sort{|a, b| a["key"] <=> b["key"] }.each do |aggr| %>
         <li class="inline-block">
           <% tag_name = params[:tag] == aggr["key"] ? nil :  aggr["key"] %>
-          <%= link_to url_for({tag: tag_name, q: params[:q]}), class: params[:tag] == aggr["key"] ? "selected" : "" do %>
+          <%= link_to url_for({tag: tag_name, q: params[:q], section: params[:section]}), class: params[:tag] == aggr["key"] ? "selected" : "" do %>
             <span class="tag"><%= "#{aggr["key"]} (#{aggr&.doc_count})" %></span>
           <% end %>
         </li>

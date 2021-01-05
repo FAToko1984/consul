@@ -5,6 +5,7 @@
 //
 
 @import 'custom_fonts';
+@import "custom/mjAccordion";
 
 .topless {
     @include breakpoint(small) {

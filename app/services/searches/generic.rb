@@ -72,12 +72,12 @@ module Searches
 
     def self.post_filter
       if @params[:section] || @params[:tag]
-        terms = { post_filter: {term: {}} }
+        terms = { post_filter: {bool: {filter: []} }}
         if @params[:section]
-          terms[:post_filter][:term][:model_name] = @params[:section]
+          terms[:post_filter][:bool][:filter] << {term: {model_name: @params[:section] }}
         end
         if @params[:tag]
-          terms[:post_filter][:term][:tags] = @params[:tag]
+          #terms[:post_filter][:bool][:filter] << {term: {tags: @params[:tag]}}
         end
         terms
       else
@@ -118,6 +118,10 @@ module Searches
       terms = []
       if @params[:geozones] && @params[:geozones].any?
         terms.push(terms: { geozone_id: @params[:geozones] })
+      end
+
+      if @params[:tag] && !['site_customization_page', 'budget_investment', 'comment', 'poll'].include?(@params[:section])
+        terms.push(term: { tags: @params[:tag] })
       end
       terms
     end

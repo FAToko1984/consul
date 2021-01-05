@@ -50,7 +50,7 @@
       <li class="<%if params[:section].blank?%>selected<%end%>"><%=link_to t("search.tabs.all", doc_count: total_count || 0), {section: nil, q: params[:q]}%></li>
       <%@results.aggregations.genres.buckets.each do |aggr| %>
         <li class="<%if params[:section] == aggr["key"]%>selected<%end%>"
-            ><%=link_to t("search.tabs.#{aggr["key"]}", doc_count: aggr&.doc_count || 0), {section: aggr["key"], q: params[:q]}%></li>
+            ><%=link_to t("search.tabs.#{aggr["key"]}", doc_count: aggr&.doc_count || 0), {section: aggr["key"], q: params[:q], tag: params[:tag]}%></li>
       <%end%>
 
     </ul>

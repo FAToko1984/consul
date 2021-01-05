@@ -1,10 +1,9 @@
 <div class="search-result">
   <% hightlights = result.inner_hits.first&.last&.hits&.hits&.first&.highlight&.to_hash%>
   <% result_data = result.inner_hits.first.last.hits.hits.first._source.to_hash%>
-
   <div class="search-result-type">
     <div class="search-result-type-icon <%=result["model_name"]%>">
-      <%=result.model_name[0]%>
+      <%=t("search.result_tag.#{result.model_name[0..1]}")%>
     </div>
   </div>
 
@@ -23,7 +22,6 @@
         <%end%>
       </div>
     <%end%>
-
     <div class='search-result-body debate'>
       <div class='search-result-date'>
         <%=link_to_if result.model_name == 'comment', I18n.l(Time.parse(result.created_at), format: :long), search_result_link(result)%>
