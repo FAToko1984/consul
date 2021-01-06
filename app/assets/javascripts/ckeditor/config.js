@@ -5,7 +5,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 
 CKEDITOR.editorConfig = function( config )
 {
-  config.extraPlugins = 'widget,lineutils';
+  config.extraPlugins = "widget,lineutils, mjAccordion";
   config.filebrowserImageBrowseLinkUrl = "/ckeditor/pictures";
   config.filebrowserImageBrowseUrl = "/ckeditor/pictures";
   config.filebrowserImageUploadUrl = "/ckeditor/pictures?";
@@ -103,6 +103,7 @@ CKEDITOR.editorConfig = function( config )
 
   config.toolbar_admin = config.toolbar_mini.concat([
     { name: "insert", items: [ "Image", "Table" ] },
+    { name: 'insert', items: [ 'MJAccordion', 'Source' ] },
     { name: "links", items: [ "Link", "Unlink", "Anchor" ] },
     { name: "insert", items: [ "Image", "Flash", "Table", "HorizontalRule", "SpecialChar" ] },
     { name: "paragraph", groups: [ "list", "indent", "blocks", "align", "bidi" ], items: [ "NumberedList", "BulletedList", "-", "Outdent", "Indent", "-", "Blockquote", "CreateDiv", "-", "JustifyLeft", "JustifyCenter", "JustifyRight", "JustifyBlock" ] },
