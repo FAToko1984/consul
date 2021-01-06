@@ -47,7 +47,8 @@
 
     <ul class='search-modules'>
       <%-total_count = @results.aggregations.genres.buckets.map{|d| d.doc_count}.sum%>
-      <li class="<%if params[:section].blank?%>selected<%end%>"><%=link_to t("search.tabs.all", doc_count: total_count || 0), {section: nil, q: params[:q]}%></li>
+      <li class="<%if params[:section].blank?%>selected<%end%>">
+      <%=link_to t("search.tabs.all", doc_count: total_count || 0), {section: nil, q: params[:q], tag: params[:tag]}%></li>
       <%@results.aggregations.genres.buckets.each do |aggr| %>
         <li class="<%if params[:section] == aggr["key"]%>selected<%end%>"
             ><%=link_to t("search.tabs.#{aggr["key"]}", doc_count: aggr&.doc_count || 0), {section: aggr["key"], q: params[:q], tag: params[:tag]}%></li>

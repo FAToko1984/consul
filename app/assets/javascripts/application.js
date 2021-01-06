@@ -44,7 +44,7 @@
 //= require turbolinks
 //= require turbolinks_anchors
 //= require ckeditor/loader
-//= require_directory ./ckeditor
+//= require ckeditor/config.js
 //= require social-share-button
 //= require initial
 //= require ahoy
