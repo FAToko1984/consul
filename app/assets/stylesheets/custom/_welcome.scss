@@ -1,108 +1,243 @@
 /* Welcome page
  - - - - - - - - - - - - - - - - - - - - - - - - -*/
 
-  
- .home-page {
+.home-page {
 
   .background-header {
       display: none;
   }
-  
-  .jumbo {
-      background: #ffffff image-url("welcome/background_header_small.jpg");
-      background-position: bottom;
-      background-repeat: no-repeat;
-      padding-bottom: rem-calc(300);
-  
-      @include breakpoint(small) {
-          background: image-url("welcome/background_header_small.jpg");
-          background-size: 100% auto;
-          background-repeat: no-repeat;
-          padding-bottom: rem-calc(5);
-          }
-  
-      @include breakpoint(medium) {
-          background: image-url("welcome/background_header_small.jpg");
-          background-size: 100% auto;
-          background-repeat: no-repeat;
-          min-height: 500px;
-          }    
-  
-      @include breakpoint(large) {
-          background: image-url("welcome/background_header_small.jpg");
-          background-size: 100% auto;
-          background-repeat: no-repeat;
-          min-height: 600px;
-          }       
-  
-      @include breakpoint(xlarge) {
-          background: image-url("welcome/background_header_small.jpg");
-          background-size: 100% auto;
-          background-repeat: no-repeat;
-          } 
-              
-      @include breakpoint(xxlarge) {
-        background: image-url("welcome/background_header_small.jpg");
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        min-height: 1080px;
-        } 
 
-      .small-12.medium-6.column.medium-9.small {
-          margin-top: rem-calc(0);
-  
-  
-          @include breakpoint(medium) {
-              margin-top: rem-calc(85);
-          }
-  
-          @include breakpoint(large) {
-              margin-top: rem-calc(130);
-          }
-   
-          @include breakpoint(xlarge) {
-            margin-top: rem-calc(220);
-            background-size: 1000% auto;
-        } 
-          @include breakpoint(xxlarge) {
-              margin-top: rem-calc(320);
-              background-size: 1000% auto;
-          }
-      }
-  
-      h1 {
-        color: #fff;
-      }
+  .jumbo {
+
+    @media only screen and (max-width: 414px) {
+      background: #ffffff image-url("welcome/head_small.png");
+      background-position: bottom;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      padding-bottom: rem-calc(220);
 
       span {
-        color: #fff;
+        display: none;
       }
 
       .lead {
-      color: #fff;
-      font-size: rem-calc(30);
-      font-weight: 700;
-      line-height: rem-calc(30);
-  
-      @include breakpoint(medium) {
-          font-size: rem-calc(40);
-          line-height: rem-calc(40);
+        color: $brand;
+        font-size: rem-calc(30);
+        font-weight: 700;
+        line-height: rem-calc(30);
       }
-      
-      @include breakpoint(large) {
-          font-size: rem-calc(50);
-          line-height: rem-calc(50);
-      }
-          
-      @include breakpoint(xxlarge) {
-          font-size: rem-calc(60);
-          line-height: rem-calc(60);
-      }
-      }
-  
+
       .button {
-      background: $brand;
-      color: #fff;
+        background: $brand;
+        color: #fff;
+        max-width: 100%;
       }
+    }
+
+    @media only screen and (min-width: 414px) and (max-width: 550px) {
+      background: #ffffff image-url("welcome/head_small.png");
+      background-position: bottom;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      padding-bottom: rem-calc(330);
+
+      span {
+        display: none;
+      }
+
+      .lead {
+        color: $brand;
+        font-size: rem-calc(30);
+        font-weight: 700;
+        line-height: rem-calc(30);
+      }
+
+      .button {
+        background: $brand;
+        color: #fff;
+        max-width: 100%;
+      }
+    }
+
+    @media only screen and (min-width: 550px) and (max-width: 640px) {
+      background: #ffffff image-url("welcome/head_small.png");
+      background-position: bottom;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      padding-bottom: rem-calc(390);
+
+      span {
+        display: none;
+      }
+
+      .lead {
+        color: $brand;
+        font-size: rem-calc(30);
+        font-weight: 700;
+        line-height: rem-calc(30);
+      }
+
+      .button {
+        background: $brand;
+        color: #fff;
+        max-width: 100%;
+      }
+    }
+
+    @media only screen and (min-width: 640px) and (max-width: 768px) {
+      padding-top: 10px;
+      background: image-url("welcome/head_medium.png");
+      background-size: 100% auto;;
+      background-repeat: no-repeat;
+      padding-bottom: rem-calc(60);
+
+      span {
+        display: none;
+      }
+
+      .lead {
+        color: $white;
+        font-size: rem-calc(30);
+        font-weight: 700;
+        line-height: rem-calc(30);
+        padding-bottom: 120px;
+      }
+
+      .button {
+        background: $brand;
+        color: #fff;
+        max-width: 100%;
+      }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 950px) {
+      padding-top: 20px;
+      background: image-url("welcome/head_medium.png");
+      background-size: 100% auto;;
+      background-repeat: no-repeat;
+      padding-bottom: rem-calc(60);
+
+      .lead {
+        color: $white;
+        font-size: rem-calc(30);
+        font-weight: 700;
+        line-height: rem-calc(30);
+        padding-bottom: 150px;
+      }
+
+      .button {
+        background: $brand;
+        color: #fff;
+        max-width: 100%;
+      }
+    }
+
+    @media only screen and (min-width: 950px) and (max-width: 1440px) {
+      padding-top: 20px;
+      background: image-url("welcome/head_large.png");
+      background-size: 100% auto;;
+      background-repeat: no-repeat;
+      padding-bottom: rem-calc(60);
+
+      .lead {
+        color: $white;
+        font-size: rem-calc(30);
+        font-weight: 700;
+        line-height: rem-calc(30);
+        padding-bottom: 150px;
+      }
+
+      .button {
+        background: $brand;
+        color: #fff;
+        max-width: 100%;
+      }
+    }
+
+    @media only screen and (min-width: 950px) and (max-width: 1280px) {
+      padding-top: 40px;
+      background: image-url("welcome/head_medium.png");
+      background-size: 100% auto;;
+      background-repeat: no-repeat;
+      padding-bottom: rem-calc(160);
+
+      .lead {
+        color: $white;
+        font-size: rem-calc(30);
+        font-weight: 700;
+        line-height: rem-calc(30);
+        padding-bottom: 180px;
+      }
+
+      .button {
+        background: $brand;
+        color: #fff;
+        max-width: 100%;
+      }
+    }
+    
+    @media only screen and (min-width: 1280px) and (max-width: 1554px) {
+      padding-top: 45px;
+      background: image-url("welcome/head_medium.png");
+      background-size: 100% auto;;
+      background-repeat: no-repeat;
+      padding-bottom: rem-calc(180);
+
+      .lead {
+        color: $white;
+        font-size: rem-calc(30);
+        font-weight: 700;
+        line-height: rem-calc(30);
+        padding-bottom: 260px;
+      }
+
+      .button {
+        background: $brand;
+        color: #fff;
+        max-width: 100%;
+      }
+    }
+
+    @media only screen and (min-width: 1554px) and (max-width: 1900px) {
+      padding-top: 370px;
+      background: image-url("welcome/head_large.png");
+      background-size: 100% auto;;
+      background-repeat: no-repeat;
+      padding-bottom: rem-calc(80);
+
+      .lead {
+        color: $white;
+        font-size: rem-calc(30);
+        font-weight: 700;
+        line-height: rem-calc(30);
+      }
+
+      .button {
+        background: $brand;
+        color: #fff;
+        max-width: 100%;
+      }
+    }
+
+    @media only screen and (min-width: 1900px) {
+      padding-top: 250px;
+      background: image-url("welcome/head_large.png");
+      background-size: 100% auto;;
+      background-repeat: no-repeat;
+      padding-bottom: rem-calc(380);
+
+      .lead {
+        color: $brand;
+        font-size: rem-calc(30);
+        font-weight: 700;
+        line-height: rem-calc(30);
+      }
+
+      .button {
+        background: $brand;
+        color: #fff;
+        max-width: 100%;
+      }
+    }
   }
-  }
+}
