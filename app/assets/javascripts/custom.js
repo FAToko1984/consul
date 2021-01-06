@@ -10,5 +10,5 @@ mj = function() {
 $(function() {
   
   $(document).ready(mj);
-  $(document).on('page:load', mj);
+  $(document).on('turbolinks:load', mj);
 });
