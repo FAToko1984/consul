@@ -8,7 +8,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 
 for(var i in CKEDITOR.instances){
 	CKEDITOR.instances[i].ui.addButton('MJAccordion', {
-        command : 'mjAccordion',
+        command : 'accord',
         icon 	: this.path + 'icons/mjAccordion.png',
     });
 }
