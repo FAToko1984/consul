@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200908084257) do
+ActiveRecord::Schema.define(version: 20201206220940) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -214,9 +214,9 @@ ActiveRecord::Schema.define(version: 20200908084257) do
     t.boolean "allow_custom_content", default: false
     t.text "latitude"
     t.text "longitude"
+    t.integer "max_ballot_lines", default: 1
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer "max_ballot_lines", default: 1
     t.index ["group_id"], name: "index_budget_headings_on_group_id"
   end
 
@@ -1311,6 +1311,7 @@ ActiveRecord::Schema.define(version: 20200908084257) do
     t.integer "author_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string "title"
   end
 
   create_table "signatures", id: :serial, force: :cascade do |t|
@@ -1382,8 +1383,15 @@ ActiveRecord::Schema.define(version: 20200908084257) do
     t.integer "tagger_id"
     t.string "context", limit: 128
     t.datetime "created_at"
+    t.index ["context"], name: "index_taggings_on_context"
+    t.index ["tag_id", "taggable_id", "taggable_type", "context", "tagger_id", "tagger_type"], name: "taggings_idx", unique: true
     t.index ["tag_id"], name: "index_taggings_on_tag_id"
     t.index ["taggable_id", "taggable_type", "context"], name: "index_taggings_on_taggable_id_and_taggable_type_and_context"
+    t.index ["taggable_id", "taggable_type", "tagger_id", "context"], name: "taggings_idy"
+    t.index ["taggable_id"], name: "index_taggings_on_taggable_id"
+    t.index ["taggable_type"], name: "index_taggings_on_taggable_type"
+    t.index ["tagger_id", "tagger_type"], name: "index_taggings_on_tagger_id_and_tagger_type"
+    t.index ["tagger_id"], name: "index_taggings_on_tagger_id"
   end
 
   create_table "tags", id: :serial, force: :cascade do |t|
@@ -1395,6 +1403,7 @@ ActiveRecord::Schema.define(version: 20200908084257) do
     t.integer "budget_investments_count", default: 0
     t.integer "legislation_proposals_count", default: 0
     t.integer "legislation_processes_count", default: 0
+    t.integer "polls_count", default: 0
     t.index ["debates_count"], name: "index_tags_on_debates_count"
     t.index ["legislation_processes_count"], name: "index_tags_on_legislation_processes_count"
     t.index ["legislation_proposals_count"], name: "index_tags_on_legislation_proposals_count"

@@ -25,6 +25,8 @@ de:
       username_label: Benutzer*innenname
       verified_account: Konto verifiziert
       verify_my_account: Mein Konto verifizieren
+  alerts:
+    select_one_category: "Bitte wählen Sie zunächst eine Kategorie"
   application:
     close: Schließen
     menu: Menü
@@ -140,6 +142,7 @@ de:
       recommendation_two: Diskussionen oder Kommentare, die illegale Handlungen beinhalten, werden gelöscht sowie diejenigen, die die Diskussionen absichtlich sabotieren. Alles andere ist erlaubt.
       recommendations_title: Empfehlungen für die Erstellung einer Diskussion
       start_new: Eine Diskussion starten
+      start_new_in: Starten Sie eine Diskussion in %{category}
     show:
       author_deleted: Benutzer*in gelöscht
       comments:
@@ -403,6 +406,8 @@ de:
       recommendation_two: Diskussionen oder Kommentare, die illegale Handlungen beinhalten, werden gelöscht sowie diejenigen, die die Diskussionen absichtlich sabotieren. Alles andere ist erlaubt.
       recommendations_title: Empfehlungen zum Erstellen eines Vorschlags
       start_new: Neuen Vorschlag erstellen
+      start_new_in: Erstellen Sie einen Vorschlag in %{category}
+      help: Wie funktionieren Vorschläge?      
     notice:
       retired: Vorschlag im Ruhezustand
       published: Der Vorschlag wurde veröffentlicht
@@ -747,6 +752,7 @@ de:
       districts: "Bereiche"
       districts_list: "Liste der Bereiche"
       categories: "Tags"
+      subcategories: "Unterkategorien"
     target_blank: " (Link öffnet im neuen Fenster)"
     you_are_in: "Sie befinden sich in"
     unflag: Markierung aufheben

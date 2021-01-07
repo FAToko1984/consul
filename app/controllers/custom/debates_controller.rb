@@ -1,17 +1,17 @@
-require_dependency Rails.root.join("app", "controllers", "proposals_controller").to_s
+require_dependency Rails.root.join("app", "controllers", "debates_controller").to_s
 
-class ProposalsController
+class DebatesController < ApplicationController
+
+  before_action :load_categories, only: [:index, :new, :create, :edit, :map, :summary]
+
   def index_customization
-    discard_draft
-    discard_archived
-    load_retired
-    load_selected
-    load_featured
-    remove_archived_from_order_links
+    @featured_debates = @debates.featured
     take_only_by_tag_names
   end
 
+
   private
+
     def take_only_by_tag_names
       if params[:tags].present?
         @resources = @resources.tagged_with(params[:tags].split(","), all: true)

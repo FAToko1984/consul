@@ -4,6 +4,7 @@ de:
       title: Verwaltung
     actions:
       actions: Aktionen
+      update: Update
       confirm: Sind Sie sich sicher?
       confirm_hide: Moderation bestätigen
       hide: Ausblenden
@@ -418,6 +419,8 @@ de:
         author: Autor
         title: Diskussionen
         no_debates: Keine Diskussion vorhanden.
+      update:
+        notice: Diskussion aktualisiert
     hidden_debates:
       index:
         filter: Filter
@@ -1206,6 +1209,7 @@ de:
         selected: Vorschläge auswählen
         milestones: Meilensteine
         no_proposals: Keine Vorschläge vorhanden.
+        tags: Topics
       show:
         create_question: Fügen Sie diesen Vorschlag zu einer Abstimmung hinzu, über die abgestimmt werden soll
       form:
@@ -1440,6 +1444,7 @@ de:
         title: Tags der Vorschläge
         topic: Tag
         help: "Wenn ein*e Benutzer*in einen Vorschlag erstellt, werden die folgenden Tags als Standard-Tags vorgeschlagen."
+        scope: Unterkategorie
     users:
       columns:
         id: ID
